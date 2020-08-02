@@ -8,9 +8,9 @@ while(!Number.isInteger(firstNumber) || firstNumber === 0) {
     firstNumber = +prompt('Введите целое число');
 }
 
-while(!Number.isInteger(lastNumber) || lastNumber === 0) {
-    alert('Вы ввели не целоё число.')
-    lastNumber = +prompt ('Введите целое число.');
+while(!Number.isInteger(lastNumber) || lastNumber === 0 || lastNumber <= firstNumber) {
+    alert('Вы ввели не целоё число. Второе число должно быть больше чем первое')
+    lastNumber = +prompt ('Введите целое число. Второе число должно быть больше чем первое');
 }
 
 console.log("Первое число:", firstNumber, "Второе число:", lastNumber);
