@@ -29,3 +29,34 @@ function firstLetterUppercase(name) {
 console.log(firstLetterUppercase('влад'));
 
 // 4. Створити функцію, яка вираховує суму, що залишається після оплати податку від зарабітньої плати. (Податок = 18% + 1.5% -> 19.5%). Приклад: 1000 -> 805
+
+function payrollTax(percent, yourSalary) {
+    yourSalary = 18500;
+    percent = 19.5/100;
+    return yourSalary * percent;
+}
+
+console.log('Ваш налога от заработной платы', +payrollTax().toFixed(0));
+
+
+// 5. Створити функцію, яка повертає випадкове ціле число в діапазоні від N до M. Приклад: getRandomNumber(1, 10) -> 5
+
+function getRandomNumber() {
+    let minNumber = 1;
+    return minNumber + Math.floor(Math.random() * 10);
+}
+
+console.log(getRandomNumber());
+
+
+// 6. Створити функцію, яка рахує скільки разів певна буква повторюється в слові. Приклад: countLetter("а", "Асталавіста") -> 4
+
+function countLetter(letter, word) {
+    let  result = 0;
+    word = word.toLowerCase();
+    for (let i = 0; i < word.length; i++) {
+        if (letter === word[i]) result++;
+    }
+    return result;
+}
+console.log(countLetter('а', 'Асталавіста'));
