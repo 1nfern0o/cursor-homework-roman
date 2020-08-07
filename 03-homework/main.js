@@ -33,8 +33,8 @@ console.log(firstLetterUppercase('влад'));
 function payrollTax(percent, yourSalary) {
     yourSalary = 18500;
     percent = 19.5/100;
-    let calculator = yourSalary - (yourSalary * percent);
-    return calculator;
+    let accountant = yourSalary - (yourSalary * percent);
+    return accountant;
 }
 
 console.log('Ваша зарплата с учётом налога', +payrollTax().toFixed(0));
