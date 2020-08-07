@@ -37,7 +37,7 @@ function payrollTax(percent, yourSalary) {
     return calculator;
 }
 
-console.log('Ваш налога от заработной платы', +payrollTax().toFixed(0));
+console.log('Ваша зарплата с учётом налога', +payrollTax().toFixed(0));
 
 
 // 5. Створити функцію, яка повертає випадкове ціле число в діапазоні від N до M. Приклад: getRandomNumber(1, 10) -> 5
