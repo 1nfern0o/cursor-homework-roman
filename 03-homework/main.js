@@ -33,7 +33,8 @@ console.log(firstLetterUppercase('влад'));
 function payrollTax(percent, yourSalary) {
     yourSalary = 18500;
     percent = 19.5/100;
-    return yourSalary * percent;
+    let calculator = yourSalary - (yourSalary * percent);
+    return calculator;
 }
 
 console.log('Ваш налога от заработной платы', +payrollTax().toFixed(0));
@@ -43,7 +44,8 @@ console.log('Ваш налога от заработной платы', +payroll
 
 function getRandomNumber() {
     let minNumber = 1;
-    return minNumber + Math.floor(Math.random() * 10);
+    let maxNumber = 10;
+    return minNumber + Math.floor(Math.random() * maxNumber);
 }
 
 console.log(getRandomNumber());
