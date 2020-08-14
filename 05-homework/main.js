@@ -24,13 +24,8 @@ console.log(getModa(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));*/
 // 3. Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
 //    Приклад: getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) –> 34.4
 
-function getAverage(...numbers) {
-    let arithmeticMean = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        arithmeticMean +=  numbers[i];
-    }
-    return arithmeticMean / numbers.length;
-}
+const getAverage = (...numbers) => numbers.reduce((accumulator, currentValue) => accumulator += currentValue, 0) / numbers.length;
+
 
 console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
 
