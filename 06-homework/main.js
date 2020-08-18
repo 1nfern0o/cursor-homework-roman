@@ -50,7 +50,7 @@ console.log(`${students[2].name}` + ': ' + getAverageMark(students[2]));
 function getStudentInfo(id) {
     let name = students[id].name,
         course = students[id].course,
-        result = 'Имя студента: ' + name + ', ' + 'Курс: ' + course + ', ' + 'Среднее арифметическое: ' + getAverageMark(students[2]);
+        result = 'Имя студента: ' + name + ', ' + 'Курс: ' + course + ', ' + 'Среднее арифметическое: ' + getAverageMark(students[0]);
     return result;
 }
 
