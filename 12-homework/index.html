@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework12 "Робота з сервером"</title>
+</head>
+<body>
+
+<div class="container">
+
+    <button id="getPlanets" class="infoButton">Planets</button>
+    <button id="getInfo" class="infoButton">Get character</button>
+    <label for="filmNumber">Enter movie number :</label>
+    <input id = 'filmNumber' type="number" value="2" min="1" max="6">
+
+
+
+    <div class="characters"></div>
+    <div class="planetsContainer">
+        <div id="paginationContainer"></div>
+        <div class="planetsList"></div>
+    </div>
+
+    <!--<button type='button' id='button' name='button'>Find Someone</button>-->
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

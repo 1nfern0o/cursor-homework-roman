@@ -1,0 +1,123 @@
+/*body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    color: #fff;
+}*/
+
+
+body{
+    background: url(../images/bg.jpg);
+    font-family: 'Alfa Slab One', cursive;
+    color: #fff;
+}
+
+label { display: inline-block; }
+
+h1 { padding-left: 200px; }
+
+li { padding-bottom: 10px; }
+
+.character {
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+    align-items: flex-end;
+    text-align: center;
+    box-shadow: 0 3px 5px 3px rgba(0,0,0,.13);
+    position: relative;
+    border: 3px solid rgb(9, 230, 29);
+    border-radius: 10px;
+}
+.characters{
+    width: 70%;
+    display: none;
+}
+.characterName{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.characterInfo{ font-size: 20px; }
+.characterImage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+}
+
+.infoButton{
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: rgba(18, 160, 206, 1);
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    border: 2px solid rgb(9, 230, 29);
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px rgb(25, 67, 202) ;
+}
+
+.infoButton:hover{ border: 4px solid rgb(9, 230, 29); }
+
+.pagination{
+    color: #fff;
+    border: 2px solid rgb(9, 230, 29);
+    text-shadow: 1px 1px 5px rgb(25, 67, 202) ;
+    background-color: rgba(18, 160, 206, 1);
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.pagination:hover{ border: 4px solid rgb(9, 230, 29); }
+
+.accordion{ cursor: pointer; }
+.accordion:hover{
+    color: rgb(9, 230, 29);
+    text-shadow: 1px 1px 5px rgb(236, 252, 16) ;
+}
+.active{ display: block !important; }
+.planetsContainer{
+    margin-left: 50px;
+    display: none;
+}
+.panel{
+    color: rgb(9, 230, 29);
+    font-size: 15px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    list-style: none;
+}
+
+
+/*.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid blue;
+    border-color: blue transparent blue transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
