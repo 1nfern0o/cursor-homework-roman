@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+label { display: inline-block; }
+
+li { padding-bottom: 10px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.block-item {
+    display: flex;
+    justify-content: center;
+}
+.block {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+}
+
+.sounds-wrapper {
+    display: flex;
+    flex: 1;
+    min-height: 55vh;
+    align-items: center;
+    justify-content: center;
+}
+.sound {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 15px;
+    border: 2px solid #5f5f5f;
+    border-radius: 5px;
+    transition: all .07s ease;
+}
+
+.sound__text {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sound__img {
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.active  {
+    height: 38px;
+    border: 2px solid #fff;
+}
+
+.character {
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+    align-items: flex-end;
+    text-align: center;
+    box-shadow: 0 3px 5px 3px rgba(0,0,0,.13);
+    position: relative;
+    border: 3px solid rgb(9, 230, 29);
+    border-radius: 10px;
+}
+.characters{
+    width: 70%;
+    display: none;
+}
+.characterName{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.characterInfo{ font-size: 20px }
+.characterImage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+}
+
+.infoButton{
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: rgba(18, 160, 206, 1);
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    border: 2px solid rgb(9, 230, 29);
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px rgb(25, 67, 202) ;
+}
+
+.infoButton:hover{ border: 2px solid red }
+
+.pagination{
+    color: #fff;
+    border: 2px solid rgb(9, 230, 29);
+    text-shadow: 1px 1px 5px rgb(25, 67, 202) ;
+    background-color: rgba(18, 160, 206, 1);
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.pagination:hover{ border: 2px solid red  }
+
+.accordion{ cursor: pointer; }
+.accordion:hover{
+    color: rgb(9, 230, 29);
+    text-shadow: 1px 1px 5px rgb(236, 252, 16) ;
+}
+.active{ display: block !important; }
+.planetsContainer{
+    margin-left: 50px;
+    display: none;
+}
+.panel{
+    color: rgb(9, 230, 29);
+    font-size: 15px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    list-style: none;
+}
